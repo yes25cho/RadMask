@@ -6,5 +6,8 @@ package mainPackages;
 //- 파출소(해피엔딩/배드엔딩)-담당 : 박선주 (메소드 이름 : policeMethod)
 //- 교회(해피엔딩/배드엔딩)-담당 : 권하은 (메소드 이름 : churchMethod)
 public class LeftEndingClass {
+	public static void leftMethod() {
+		
+	}
 
 }

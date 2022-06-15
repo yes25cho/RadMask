@@ -84,10 +84,16 @@ public class PrintMes{
 		System.out.print("       선택지를 입력하시오  : ");
 	}
 	
+//	printReChoHome메서드
+	public static void printReChoHome(){
+//	- 	선택 다시 입력 문구 출력(홈화면)
+		PrintMes.printExceHome();
+		System.out.println("다시 선택 : ");
+	}
 //	printReCho메서드
 	public static void printReCho(){
 //	- 	선택 다시 입력 문구 출력
-		PrintMes.printExceHome();
-		System.out.println("다시 선택 : ");
+		PrintMes.printExce();
+		System.out.print("다시 선택 : ");
 	}
 }
