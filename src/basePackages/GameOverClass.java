@@ -8,7 +8,7 @@ public class GameOverClass {
 	static String rePlay = new String("다시하기");
 //	gameOverIn메서드
 	public static int gameOverIn(){
-//	- 엔딩 화면에서 선택 입력받음
+//	- 오버 화면에서 선택 입력받음
 		PrintMes.printOver();
 		String chooseM="";
 		chooseM = sc.next();
@@ -28,7 +28,7 @@ public class GameOverClass {
 			return 1; 
 		}
 		else {
-			PrintMes.printReCho();
+			PrintMes.printReChoHome();
 			String chooseM=" ";
 			chooseM = sc.next();
 			gameOverChoose(chooseM);

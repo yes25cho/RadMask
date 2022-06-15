@@ -28,7 +28,7 @@ public class GameEndClass {
 			PrologueClass.prologueMethod();
 		}
 		else {
-			PrintMes.printReCho();
+			PrintMes.printReChoHome();
 			String chooseM=" ";
 			chooseM = sc.next();
 			gameEndChoose(chooseM); 

@@ -39,7 +39,7 @@ public class HomeClass {
 			homeIn();
 		}
 		else {
-			PrintMes.printReCho();
+			PrintMes.printReChoHome();
 			String chooseM=" ";
 			chooseM = sc.next();
 			homeChoose(chooseM);

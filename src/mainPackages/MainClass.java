@@ -1,11 +1,12 @@
 package mainPackages;
 //mainClass  
-import basePackages.HomeClass;
+import basePackages.*;
 
 public class MainClass {
 
 	public static void main(String[] args){
-		HomeClass.homeIn();
+		PrologueClass.prologueCho3Method();
+		//HomeClass.homeIn();
 
 	}
 
