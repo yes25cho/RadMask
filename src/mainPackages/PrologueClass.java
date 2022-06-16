@@ -55,6 +55,7 @@ public class PrologueClass {
 		BaseFunc.countStr("");
 		BaseFunc.countCh2("▷ 엇..?");
 		BaseFunc.countStr("▷ 뒤에 인기척이 느껴진다.");
+<<<<<<< HEAD
 		prologueCho1Method();	//1선택 받기 위한 메소드
 		BaseFunc.countStr("(계속해서 골목을 터벅터벅 걸어간다.)");
 		BaseFunc.countStr("");
@@ -215,6 +216,71 @@ public class PrologueClass {
 	public static void prologueReMethod() {
 		if(GameOverClass.gameOverIn()==1) {
 			prologueStoryMethod();
+=======
+		BaseFunc.countStr("        ▶ 뒤를 돌아본다                              ▶ 그냥 간다");
+		PrintMes.printChoose();
+		prologueCho1Method();	//1선택 받기 위한 메소드
+		BaseFunc.countStr("(계속해서 골목을 터벅터벅 걸어간다.)");
+		BaseFunc.countStr("");
+		BaseFunc.countCh1("(또각..또각..)");
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("▷ 엇..? 또 그 발걸음 소리다...");
+		BaseFunc.countStr("        ▶ 뒤를 돌아본다                              ▶ 뒤 돌아보지 않는다");
+		
+		BaseFunc.countCh2("▷ 이번에는 진짜다... 선명한 기침 소리가 들렸다.");
+		BaseFunc.countStr("        ▶ 천천히 고개를 돌아본다                              ▶ 감기걸린 사람인가 보다 그냥 가자");
+	}
+	
+	public static void prologueCho1Method(){//1선택 받기 위한 메소드
+		String choose = "";
+		choose = scStr.nextLine();
+		if (choose.equals("뒤를 돌아본다")) {
+			BaseFunc.countCh2("▷ 별거없다.");
+		} else if (!(choose.equals("그냥간다"))) {
+			PrintMes.printReCho();
+			prologueCho1Method();		//다시 입력 받도록 제귀 호출
+		}
+	}
+	
+	public static void prologueCho2Method(){//2선택 받기 위한 메소드
+		String choose = "";
+		choose = scStr.nextLine();
+		if (choose.equals("뒤를 돌아본다")) {
+			BaseFunc.countStr("(가로등 뒤에 그림자가 보인다.)");
+			BaseFunc.countStr("        ▶가로등을 살펴본다                            ▶ 살펴보지 않는다");
+			prologueCatMethod();
+		} else if (!(choose.equals("뒤 돌아보지 않는다"))) {
+			PrintMes.printReCho();
+			prologueCho2Method();		//다시 입력 받도록 제귀 호출
+		}
+	}
+	
+	public static void prologueCatMethod(){//가로등 선택 받기 위한 메소드
+		String choose = "";
+		choose = scStr.nextLine();
+		if (choose.equals("가로등을 살펴본다")) {
+			BaseFunc.countCh2("▷ 고양이다. 그냥 가자.");
+		} else if (!(choose.equals("살펴보지 않는다"))) {
+			PrintMes.printReCho();
+			prologueCatMethod();		//다시 입력 받도록 제귀 호출
+		}
+	}
+	
+	public static void prologueCho3Method(){//2선택 받기 위한 메소드
+		String choose = "";
+		choose = scStr.nextLine();
+		if (choose.equals("천천히 고개를 돌아본다")) {
+			BaseFunc.countStr("▷ 빨간마스크를 마주쳤다. 어떻게해야하지");
+		}
+		else if (choose.equals("감기걸린 사람인가 보다 그냥 가자")) {
+			if(GameOverClass.gameOverIn()==1) {
+				prologueStoryMethod();
+			}
+		}
+		else {
+			PrintMes.printReCho();
+			prologueCho2Method();		//다시 입력 받도록 제귀 호출
+>>>>>>> refs/remotes/origin/master
 		}
 	}
 }
