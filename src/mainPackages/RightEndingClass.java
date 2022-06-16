@@ -7,7 +7,6 @@ package mainPackages;
 //- 아파트 친구(연우)집(11)(진엔딩)-담당 : 박선주 (메소드 이름 : floorFriendMethod)
 //- 아파트 옥상-담당 : 권하은 (메소드 이름 : rooftopMethod)
 public class RightEndingClass {
-<<<<<<< HEAD
 	public static void rightMethod() {
 		
 	}
@@ -15,10 +14,5 @@ public class RightEndingClass {
 		
 	}
 
-=======
-	public void floor4Method() {//조예서 작성 
-		
-	}
->>>>>>> refs/remotes/origin/master
 	
 }
