@@ -6,7 +6,7 @@ public class BaseFunc {
 //딜레이
 //*글자 단위 딜레이 
 	
-//	countCh2 메서드
+//	countCh2 메서드     
 	public static void countCh2(String mes){
 //	- 기본적으로 많이 사용 하는 딜레이 메소드  
 //	- 한 글자씩 출력
