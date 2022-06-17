@@ -45,26 +45,47 @@ public class LeftEndingClass {
 		BaseFunc.countStr("");
 		BaseFunc.countCh2("▷  뭐라고 대답해야 하지..? ");
 		BaseFunc.countStr("");
+
+		
+		while(true) {
 			
-		System.out.println("          ▶ 네                               ▶ 아뇨");
-		PrintMes.printChoose();
-		dab = sc.nextLine();
-		
-		BaseFunc.countStr("");	
-		
-		if(dab.equals("네")) {
-			BaseFunc.countCh2("(그러자 빨간 마스크가 말했다.)");
-			BaseFunc.countStr("");
-			BaseFunc.countCh2("빨간 마스크 : 그럼...너도 똑같이 만들어줄게....");
-			BaseFunc.countCh2("▷  네?!.. 잠깐만요!! ");
-			BaseFunc.countStr("");
-			BaseFunc.countCh2("(그녀가 내 입을 잡았다.)");
-			BaseFunc.countStr("");
-			BaseFunc.countCh2("빨간 마스크 : 너도.. 예뻐지는거야...");
-			BaseFunc.margin5();
-			BaseFunc.countCh2("\"투두둑....\"");
-			BaseFunc.margin5();
-			GameOverClass.gameOverIn();
+			System.out.println("          ▶ 네                               ▶ 아뇨");
+			PrintMes.printChoose();
+			dab = sc.nextLine();
+			
+			BaseFunc.countStr("");	
+			
+			if(dab.equals("네")) {
+				BaseFunc.countCh2("(그러자 빨간 마스크가 말했다.)");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("빨간 마스크 : 그럼...너도 똑같이 만들어줄게....");
+				BaseFunc.countCh2("▷  네?!.. 잠깐만요!! ");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("(그녀가 내 입을 잡았다.)");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("빨간 마스크 : 너도.. 예뻐지는거야...");
+				BaseFunc.margin5();
+				BaseFunc.countCh2("\"투두둑....\"");
+				BaseFunc.margin5();
+				GameOverClass.gameOverIn();
+			//	break;
+			}else if(dab.contentEquals("아뇨")) {
+				BaseFunc.countCh2("빨간 마스크 : 그래?...");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("(그녀가 내 입을 잡았다.)");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("▷  ?!.. ㅈ잠깐만..!! ");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("(그리곤 내 입을 관자놀이까지 찢었버렸다.)");
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("빨간 마스크 : 이제 너보단 낫지?...");
+				BaseFunc.margin5();
+				GameOverClass.gameOverIn();
+			//	break;
+			}else {
+				BaseFunc.countCh2("다시 입력하세요");
+				continue;
+			}
 		}
 		
 	}
