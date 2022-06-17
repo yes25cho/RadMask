@@ -1,7 +1,7 @@
 package basePackages;
 
 public class PlayerClass {
-	String playerName = "Ã¶¿ë";
-	String gender ="??";
-	int count = 0;
+	public String playerName = "°ûÃ¶¿ë";
+	public String gender ="¿©";
+	public int count = 0;
 }

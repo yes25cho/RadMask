@@ -151,7 +151,7 @@ public class BaseFunc {
 //	margin5메서드
 	public static void margin5() {
 //	- 5줄의 공백을 넣는 메소드
-		for(int i=0; i<=10; i++) {
+		for(int i=0; i<=5; i++) {
 			System.out.println();
 		}
 	}

@@ -90,10 +90,11 @@ public class PrintMes{
 		PrintMes.printExceHome();
 		System.out.println("다시 선택 : ");
 	}
+	
 //	printReCho메서드
 	public static void printReCho(){
 //	- 	선택 다시 입력 문구 출력
 		PrintMes.printExce();
-		System.out.print("다시 선택 : ");
 	}
 }
+

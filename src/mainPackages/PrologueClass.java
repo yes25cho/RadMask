@@ -11,7 +11,19 @@ import basePackages.*;
 //- 골목길 내용-담당 : 조예서	(메소드 이름 : prologueChoMethod)
 public class PrologueClass {
 	static Scanner scStr = new Scanner(System.in);
+	static Scanner scInt = new Scanner(System.in);
+	static public PlayerClass Plc = new PlayerClass();
+	public static void playerSet() {
+		BaseFunc.margin10();
+		System.out.println("당신의 이름은?");
+		System.out.print("입력 : ");
+		Plc.playerName = scStr.nextLine();
+		System.out.println("당신의 성별은?");
+		System.out.print("입력 : ");
+		Plc.gender= scStr.nextLine();
+	}
 	public static void prologueMethod(){
+		playerSet();
 		BaseFunc.margin10();
 		BaseFunc.countStr("");
 		BaseFunc.countCh2("OO구에서 20대 대학생이 갑작스럽게  실종되는 사건이 발생 되었습니다.");
@@ -76,9 +88,11 @@ public class PrologueClass {
 		String choose = "";
 		choose = scStr.nextLine();
 		if (choose.equals("뒤를 돌아본다")) {
+			BaseFunc.countStr("");
 			BaseFunc.countCh2("▷ 별거없다.");
 		} else if (!(choose.equals("그냥간다"))) {
 			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueCho1Method();		//다시 입력 받도록 제귀 호출
 		}
 	}
@@ -92,6 +106,8 @@ public class PrologueClass {
 		if (choose.equals("뒤를 돌아본다")) {
 			prologueCatMethod();
 		} else if (!(choose.equals("뒤 돌아보지 않는다"))) {
+			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueCho2Method();		//다시 입력 받도록 제귀 호출
 		}
 	}
@@ -106,6 +122,8 @@ public class PrologueClass {
 		if (choose.equals("가로등을 살펴본다")) {
 			BaseFunc.countCh2("▷ 고양이다. 그냥 가자.");
 		} else if (!(choose.equals("살펴보지 않는다"))) {
+			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueCatMethod();		//다시 입력 받도록 제귀 호출
 		}
 	}
@@ -123,6 +141,8 @@ public class PrologueClass {
 			prologueReMethod();
 		}
 		else {
+			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueCho3Method();		//다시 입력 받도록 제귀 호출
 		}
 	}
@@ -146,6 +166,7 @@ public class PrologueClass {
 		}
 		else  {
 			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueMaskMethod();		//다시 입력 받도록 제귀 호출
 		}
 	}
@@ -193,6 +214,7 @@ public class PrologueClass {
 		}
 		else {
 			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueInstaMethod();	//다시 입력 받도록 제귀 호출
 		}
 	}
@@ -209,6 +231,8 @@ public class PrologueClass {
 			LeftEndingClass.leftMethod();
 		}
 		else {
+			PrintMes.printReCho();
+			BaseFunc.margin5();
 			prologueforkMethod();		//다시 입력 받도록 제귀 호출
 		}
 	}
