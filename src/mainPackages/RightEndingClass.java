@@ -1,7 +1,9 @@
 package mainPackages;
 
+import javax.swing.plaf.basic.BasicBorders.MarginBorder;
+
 import basePackages.BaseFunc;
-import basePackages.GameEndClass;
+import basePackages.GameOverClass;
 import basePackages.ImgClass;
 
 //오른쪽 엔딩 관련 클래스를 모아 두는 곳 입니다.
@@ -33,11 +35,10 @@ public class RightEndingClass {
 		BaseFunc.countStr("");
 		BaseFunc.countCh2("(옥상에 보이는 붉은 실루엣....)");
 		BaseFunc.countCh2("(빨간마스크의 목소리가 희미하게 들린다...)");
-		BaseFunc.margin20();
 		ImgClass.RadMaskImg1();
-		BaseFunc.margin10();
 		BaseFunc.countCh2("\"나... 예뻐...?\"");
-		GameEndClass.gameEndIn();
+		BaseFunc.margin5();
+		GameOverClass.gameOverIn();
 	}
 
 }

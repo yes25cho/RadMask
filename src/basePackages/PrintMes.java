@@ -88,6 +88,5 @@ public class PrintMes{
 	public static void printReCho(){
 //	- 	선택 다시 입력 문구 출력
 		PrintMes.printExceHome();
-		System.out.println("다시 선택 : ");
 	}
 }
