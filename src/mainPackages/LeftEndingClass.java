@@ -58,6 +58,8 @@ public class LeftEndingClass {
 		///////////////////////////////掉饭捞
 		BaseFunc.countStrNoLn("版蔓包: ");
 		BaseFunc.countCh2("\"切积, 呈公 傍何甫 凯缴洒 茄芭 酒聪具?\"");
+		BaseFunc.countCh2("\"傍何档 浆决浆决秦具瘤 呈公 弊犯霸 公府窍搁...\"");
+		BaseFunc.countCh2("(...)");
 		////////////////////////////////掉饭捞
 		BaseFunc.count();
 		BaseFunc.count();
@@ -81,7 +83,7 @@ public class LeftEndingClass {
 		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
 		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
 		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
-		BaseFunc.countCh("(捞惑茄 屈眉啊 焊牢...)");
+		BaseFunc.countCh("(儒复窍霸 捞惑茄 屈眉啊 焊牢...)");
 		// ###弧埃付胶农 免仿 坷幅
 		ImgClass.RadMaskImg3();
 		////////////////////////////////掉饭捞
