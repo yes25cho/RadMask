@@ -13,7 +13,8 @@ import java.util.TimerTask;
 //- 아파트 4층 -담당 : 조예서 (메소드 이름 : floor4Method)
 //- 아파트 친구(연우)집(11)(진엔딩)-담당 : 박선주 (메소드 이름 : floorFriendMethod)
 //- 아파트 옥상-담당 : 권하은 (메소드 이름 : rooftopMethod)
-class Mythread implements Runnable{
+
+class Mythread implements Runnable{ //멀티스레드
 	public void run() {
 		try{
 			Thread.sleep(10000);
@@ -24,6 +25,7 @@ class Mythread implements Runnable{
 }
 
 public class RightEndingClass {
+	static int count = 1; //전역변수
 	public static void houseMethod() {
 		Scanner sc = new Scanner(System.in);
 //		BaseFunc.margin20();
@@ -54,15 +56,19 @@ public class RightEndingClass {
 //		BaseFunc.countCh("(뒤에서 빨간마스크가 미친듯이 쫓아온다.)");
 //		BaseFunc.countCh("(빨리 비밀번호를 풀어야하는데... 머리가 새하얗다.)");
 //		BaseFunc.countCh("(번호가 기억이 안난다... )");
-//		BaseFunc.countCh("(큰일이다.. 빨리 머리를 굴려보자.)");
-
+		BaseFunc.countCh("(큰일이다.. 빨리 머리를 굴려보자.)");
+		////////////////////////////////////// 5번 이상 죽었을 시 => 힌트 출력
+		if(count >= 5) {
+			BaseFunc.countStr("\n\ndufdufdltkadh\n\n");
+		}
 		System.out.print("비밀번호를 입력하세요: ");
         long then = System.currentTimeMillis(); //시간 초세기
 		String password = sc.nextLine();
         long now = System.currentTimeMillis(); //시간 초세기
         long time = (now-then)/1000;
-        System.out.println(time);
+        System.out.println(time+"초"); //초 출력
         if(time>10){ // 10초 넘어갔을 때
+        	++count;
         	int cho = GameOverClass.gameOverIn();
 			if(cho==1) 
 				houseMethod();
@@ -82,6 +88,7 @@ public class RightEndingClass {
 			//###기본엔딩 출력
 		}
 		else {
+			++count;
 			int cho = GameOverClass.gameOverIn();
 			if(cho==1) 
 				houseMethod();
