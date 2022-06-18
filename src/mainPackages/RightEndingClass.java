@@ -1,8 +1,11 @@
 package mainPackages;
 
 import basePackages.BaseFunc;
+import basePackages.GameOverClass;
 import basePackages.ImgClass;
-
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 //오른쪽 엔딩 관련 클래스를 모아 두는 곳 입니다.
 //들어 가야 할것들
 //- 선택하는 메소드(이 클래스의 중심인 클래스)-담당 : ?? (메소드 이름 : rightMethod)
@@ -10,14 +13,84 @@ import basePackages.ImgClass;
 //- 아파트 4층 -담당 : 조예서 (메소드 이름 : floor4Method)
 //- 아파트 친구(연우)집(11)(진엔딩)-담당 : 박선주 (메소드 이름 : floorFriendMethod)
 //- 아파트 옥상-담당 : 권하은 (메소드 이름 : rooftopMethod)
+class Mythread implements Runnable{
+	public void run() {
+		try{
+			Thread.sleep(10000);
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
 public class RightEndingClass {
 	public static void houseMethod() {
-		
+		Scanner sc = new Scanner(System.in);
+//		BaseFunc.margin20();
+//		////////////////////////////////딜레이
+//		BaseFunc.count();
+//		BaseFunc.count();
+//		///////////////////////////////딜레이
+//		BaseFunc.countStr("뒤에 인기척이 느껴진다.");
+//		////////////////////////////////딜레이
+//		BaseFunc.count();
+//		BaseFunc.count();
+//		///////////////////////////////딜레이
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countStr("나 예뻐...? 나 예뻐...? 나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?나 예뻐...? 나 예뻐...?");
+//		BaseFunc.countCh("(뒤에서 빨간마스크가 미친듯이 쫓아온다.)");
+//		BaseFunc.countCh("(빨리 비밀번호를 풀어야하는데... 머리가 새하얗다.)");
+//		BaseFunc.countCh("(번호가 기억이 안난다... )");
+//		BaseFunc.countCh("(큰일이다.. 빨리 머리를 굴려보자.)");
+
+		System.out.print("비밀번호를 입력하세요: ");
+        long then = System.currentTimeMillis(); //시간 초세기
+		String password = sc.nextLine();
+        long now = System.currentTimeMillis(); //시간 초세기
+        long time = (now-then)/1000;
+        System.out.println(time);
+        if(time>10){ // 10초 넘어갔을 때
+        	int cho = GameOverClass.gameOverIn();
+			if(cho==1) 
+				houseMethod();
+        }
+		if(password.equals("1010235")) { //password가 맞았을 때
+			///////////////////////////////딜레이
+			BaseFunc.count();
+			BaseFunc.count();
+			///////////////////////////////딜레이
+			BaseFunc.margin20();
+			BaseFunc.countStr("현관문을 재빨리 열고 들어온 나는 쉽사리 집안으로 들어가지 못하고");
+			BaseFunc.countStr("현관에 한참을 서 있었다.");
+			BaseFunc.countStr("다시는... 이런 경험을 하고 시지 않다...");
+			BaseFunc.count();
+			BaseFunc.count();
+			BaseFunc.margin20();
+			//###기본엔딩 출력
+		}
+		else {
+			int cho = GameOverClass.gameOverIn();
+			if(cho==1) 
+				houseMethod();
+		}
 	}
 	public static void floorFriendMethod() {
 		BaseFunc.margin20();
 		BaseFunc.countStr("(친구집 앞에 도착했다.)");
-		////////////////////////////////딜레이//
+		////////////////////////////////딜레이
 		BaseFunc.count();
 		BaseFunc.count();
 		///////////////////////////////딜레이
