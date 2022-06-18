@@ -14,7 +14,7 @@ public class LeftEndingClass {
 		BaseFunc.countStr("(나는 시내입구에 가장 가까운 파출서로 다름박질했다.)");
 		BaseFunc.count();
 		BaseFunc.countStr("(숨이 가쁘도록 서 입구까지 뛰었다.)");
-		BaseFunc.countCh1("\"▷허...헉..\"");
+		BaseFunc.countCh1("\"▷ 허...헉..\"");
 		BaseFunc.countStr("(문을 박차고 들어가자 야간근무를 하고 있던 경찰관 1명이 화들짝 놀란다.)");
 		BaseFunc.count();
 		BaseFunc.count();
@@ -25,8 +25,8 @@ public class LeftEndingClass {
 		BaseFunc.countCh2("무슨일 이십니까?"); //경찰관
 		BaseFunc.countStr("(공포에 온몸을 떨고있는 나를 보며 경찰관은 편히 자리에 앉으라고 하였다.)");
 		BaseFunc.countStr("(경찰이 내온 녹차에 눈길도 주지않았다.)");
-		BaseFunc.countCh2("\"▷저...를 계속 쪼, 쫓아오는 빨간 마스크가 있어..있어..요\"");
-		BaseFunc.countCh2("\"▷아. 아까부터 계속, 학교에서 부터.. 절 쫓아와요.. 도와주세요\"");
+		BaseFunc.countCh2("\"▷ 저...를 계속 쪼, 쫓아오는 빨간 마스크가 있어..있어..요\"");
+		BaseFunc.countCh2("\"▷ 아. 아까부터 계속, 학교에서 부터.. 절 쫓아와요.. 도와주세요\"");
 		BaseFunc.count();
 		BaseFunc.count();
 		BaseFunc.count();
