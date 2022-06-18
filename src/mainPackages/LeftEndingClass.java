@@ -1,6 +1,7 @@
 package mainPackages;
 
 import basePackages.BaseFunc;
+import basePackages.ImgClass;
 
 //哭率 浚爹 包访 努贰胶甫 葛酒 滴绰 镑 涝聪促.
 //甸绢 啊具 且巴甸
@@ -14,24 +15,126 @@ public class LeftEndingClass {
 		BaseFunc.countStr("(唱绰 矫郴涝备俊 啊厘 啊鳖款 颇免辑肺 促抚冠龙沁促.)");
 		BaseFunc.count();
 		BaseFunc.countStr("(见捞 啊悔档废 辑 涝备鳖瘤 顿菌促.)");
-		BaseFunc.countCh1("\"⒐ 倾...卿..\"");
+		BaseFunc.countCh1("⒐ 倾...卿..");
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		///////////////////////////////掉饭捞
 		BaseFunc.countStr("(巩阑 冠瞒绊 甸绢啊磊 具埃辟公甫 窍绊 乐带 版蔓包 1疙捞 拳甸娄 愁鄂促.)");
+		////////////////////////////////掉饭捞
 		BaseFunc.count();
 		BaseFunc.count();
 		BaseFunc.count();
 		BaseFunc.count();
+		///////////////////////////////掉饭捞
 		BaseFunc.margin10();
-		BaseFunc.countStrNoLn("版蔓包 : ");
-		BaseFunc.countCh2("公郊老 捞绞聪鳖?"); //版蔓包
+		BaseFunc.countStrNoLn("版蔓包: ");
+		BaseFunc.countCh2("\"公郊老 捞绞聪鳖?\""); //版蔓包
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		///////////////////////////////掉饭捞
 		BaseFunc.countStr("(傍器俊 柯个阑 冻绊乐绰 唱甫 焊哥 版蔓包篮 祈洒 磊府俊 旧栏扼绊 窍看促.)");
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		///////////////////////////////掉饭捞
 		BaseFunc.countStr("(版蔓捞 郴柯 踌瞒俊 传辨档 林瘤臼疽促.)");
-		BaseFunc.countCh2("\"⒐ 历...甫 拌加 律, 卵酒坷绰 弧埃 付胶农啊 乐绢..乐绢..夸\"");
-		BaseFunc.countCh2("\"⒐ 酒. 酒鳖何磐 拌加, 切背俊辑 何磐.. 例 卵酒客夸.. 档客林技夸\"");
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		///////////////////////////////掉饭捞
+		BaseFunc.countCh2("⒐ 历...甫 拌加 律, 卵酒坷绰 弧埃 付胶农啊 乐绢..乐绢..夸");
+		BaseFunc.countCh2("酒. 酒鳖何磐 拌加, 切背俊辑 何磐.. 例 卵酒客夸.. 档客林技夸...");
+		///////////////////////////////掉饭捞
 		BaseFunc.count();
 		BaseFunc.count();
 		BaseFunc.count();
+		///////////////////////////////掉饭捞
 		BaseFunc.countStr("(版蔓篮 郴 捞具扁甫 促 佃绊绰 缴阿秦 焊捞绰 传摹绰 酒聪看促.)");
-		BaseFunc.countStrNoLn("版蔓包 : ");
+		///////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		///////////////////////////////掉饭捞
+		BaseFunc.countStrNoLn("版蔓包: ");
 		BaseFunc.countCh2("\"切积, 呈公 傍何甫 凯缴洒 茄芭 酒聪具?\"");
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		///////////////////////////////掉饭捞
+		BaseFunc.margin20(); //20沫 剁快扁
+		BaseFunc.countCh2("(郴啊 肋给 夯芭扼绊??)");
+		BaseFunc.countCh1NoLn("(酒囱单...)");
+		BaseFunc.margin20(); //20沫 剁快扁
+		BaseFunc.countCh ("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单... ");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countStr("好绰单... 好绰单... 好绰单... 好绰单...好绰单... 好绰单...好绰单... 好绰单... 好绰单... 好绰单...");
+		BaseFunc.countCh("(捞惑茄 屈眉啊 焊牢...)");
+		// ###弧埃付胶农 免仿 坷幅
+		ImgClass.RadMaskImg3();
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		////////////////////////////////掉饭捞
+		BaseFunc.margin20();
+		//////////////////////////////海靛浚爹
+		BaseFunc.countStrNoLn("(春胶家府)");
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		////////////////////////////////掉饭捞
+		/////////////////////////////////春胶
+		// ###春胶俊辑 唱坷绰 敲饭捞绢 己喊 绢痘霸 免仿??
+		BaseFunc.countCh2("oo备俊辑 癌累胶反霸 角辆等 10措 咯切积/巢切积苞");
+		BaseFunc.countCh2("弊 矫阿 颇免家俊辑 版厚甫 辑绊 乐带 版蔓包捞 角辆登绰 荤扒捞 惯积登菌促绊 钦聪促.");
+		BaseFunc.countCh2("瘤抄锅 20措 措切积 角辆苞 厚搅茄 屈怕甫 剁绊 乐绢 歹宽 拳力啊 登绊乐嚼聪促.");
+		BaseFunc.countCh2("泅犁 炼荤窍绊 乐绰 版蔓包篮 角辆等 矫阿, 颇免家 郴何 cctv啊 癌磊扁 波柳 巴栏肺 牢窍咯");
+		BaseFunc.countCh2("荐荤狼 抄亲阑 稗绊 乐嚼聪促.");
+		/////////////////////////////////春胶
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.margin5();
+		////////////////////////////////掉饭捞
+		BaseFunc.countStrNoLn("茄 切积狼 决付: ");
+		BaseFunc.countCh2("\"酒捞备 富技具... 呈 坷疵篮 老嘛 甸绢客扼.\"");
+		BaseFunc.countStrNoLn("切积: ");
+		BaseFunc.countCh2("\"览 促赤棵霸...\"");
+		////////////////////////////////掉饭捞
+		BaseFunc.margin20();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.margin20();
+		////////////////////////////////掉饭捞
+		BaseFunc.countStr("(趴...)");
+		////////////////////////////////掉饭捞
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.margin20();
+		////////////////////////////////掉饭捞
+		BaseFunc.countCh2("The End");
+		
 	}
 }
