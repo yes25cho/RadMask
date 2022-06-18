@@ -17,7 +17,7 @@ public class RightEndingClass {
 	public static void floorFriendMethod() {
 		BaseFunc.margin20();
 		BaseFunc.countStr("(친구집 앞에 도착했다.)");
-		////////////////////////////////딜레이
+		////////////////////////////////딜레이//
 		BaseFunc.count();
 		BaseFunc.count();
 		///////////////////////////////딜레이
