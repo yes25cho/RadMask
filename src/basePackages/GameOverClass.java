@@ -6,7 +6,7 @@ public class GameOverClass {
 	static Scanner sc = new Scanner(System.in);
 	static String goHome = new String("홈으로");
 	static String rePlay = new String("다시하기");
-//	gameOverIn메서드
+//	gameOverIn 메서드
 	public static int gameOverIn(){
 //	- 오버 화면에서 선택 입력받음
 		PrintMes.printOver();

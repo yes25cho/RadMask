@@ -12,7 +12,7 @@ import basePackages.*;
 //- 교회(해피엔딩/배드엔딩)-담당 : 권하은 (메소드 이름 : churchMethod)
 public class LeftEndingClass {
 	static Scanner scStr = new Scanner(System.in);
-	public static void leftMethod() {
+	public static void leftMethod(){
 		BaseFunc.countStr("(언제까지 달릴 수는 없으니 어디든 들어 가야겠다..)");
 		BaseFunc.countStr("        ▶ 파출소                          ▶ 교회");
 		BaseFunc.countStr("        ▶ 세탁소 ");
@@ -33,6 +33,135 @@ public class LeftEndingClass {
 			leftMethod();// 다시 입력 받도록 제귀 호출
 		}
 	}
+	public static void churchMethod() {
+		String dab;
+		
+		BaseFunc.countCh2("(달리던 중 앞에 교회가 보인다.)");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("▷ 교회다... 살았어!! 문도 열려있으니까 아직 사람이 있을거야!...");
+		BaseFunc.countCh2("▷ 하나님 감사합니다! 이제 교회 열심히 다닐게요!!!");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("(교회 문을 열고 들어간다...)");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2(".");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2(".");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2(".");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("▷ 어....?");
+		BaseFunc.countCh2("▷ 아무도 없어?...");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("(그 때 뒤에서 들리는 목소리,)");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		ImgClass.RadMaskImg3();
+		BaseFunc.countCh2("\"나... 예..뻐...?\"");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("(그녀가 마스크를 벗자, 귀까지 찢어진 입이 보였다.)");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		BaseFunc.countCh2("▷  뭐라고 대답해야 하지..? ");
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
+		while(true) {
+			System.out.println("          ▶ 네                               ▶ 아뇨");
+			PrintMes.printChoose();
+			dab = scStr.nextLine();
+			////////////////////////////////딜레이
+			BaseFunc.count();
+			BaseFunc.count();
+			BaseFunc.countStr("");	
+			if(dab.equals("네")) {
+				BaseFunc.countCh2("(그러자 빨간 마스크가 말했다.)");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countStrNoLn("빨간 마스크 : ");
+				BaseFunc.countCh2("그럼...너도 똑같이 만들어줄게....");
+				BaseFunc.countCh2("▷  네?!.. 잠깐만요!! ");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("(그녀가 내 입을 잡았다.)");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countStr("빨간 마스크 : ");
+				BaseFunc.countCh2("너도.. 예뻐지는거야...");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.margin5();
+				BaseFunc.countCh2("\"투두둑....\"");
+				BaseFunc.margin5();
+				GameOverClass.gameOverIn();
+			//	break;
+			}else if(dab.contentEquals("아뇨")) {
+				BaseFunc.countCh2("빨간 마스크 : 그래?...");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("(그녀가 내 입을 잡았다.)");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("▷  ?!.. ㅈ잠깐만..!! ");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("(그리곤 내 입을 관자놀이까지 찢었버렸다.)");
+				////////////////////////////////딜레이
+				BaseFunc.count();
+				BaseFunc.count();
+				BaseFunc.countStr("");
+				BaseFunc.countCh2("빨간 마스크 : 이제 너보단 낫지?...");
+				BaseFunc.margin5();
+				GameOverClass.gameOverIn();
+			//	break;
+			}else {
+				BaseFunc.countCh2("다시 입력하세요");
+				continue;
+			}
+		}
+	}
+	
 	public static void cleanerMethod() {
 		String plcGender=PrologueClass.Plc.gender;	//성별 저장
 		BaseFunc.countStr("(세탁소로 무작정 뛰기 시작하였다.)");
@@ -245,8 +374,5 @@ public class LeftEndingClass {
 		BaseFunc.margin20();
 		////////////////////////////////딜레이
 		GameEndClass.gameEndIn();
-	}
-	public static void churchMethod(){
-		//하은
 	}
 }
