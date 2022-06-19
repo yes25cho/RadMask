@@ -55,7 +55,7 @@ public class PrintMes{
 	public static void printOver(){
 //	- 기본 적인 게임임 오버 화면 출력
 		System.out.println();
-		BaseFunc.countCh("          당  신  은   죽  었  습  니  다   .  .  . ");
+		BaseFunc.countCh("       당  신  은   죽  었  습  니  다   .  .  . ");
 		System.out.println();
 		System.out.println();
 		System.out.println();
@@ -68,12 +68,12 @@ public class PrintMes{
 	public static void printEnd() {
 //	- 기본 적인 게임임 오버 화면 출력
 		System.out.println();
-		BaseFunc.countCh("            T   h   e      E   n   d");
+		BaseFunc.countCh("        T   h   e      E   n   d");
 		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		System.out.println("          ▶다시하기                              ▶홈으로");
+		System.out.println("           ▶다시하기                              ▶홈으로");
 		printChoose();
 	}
 
