@@ -1,34 +1,34 @@
 package basePackages; 
 
 public class ImgClass{
-//	RadMaskImg1硫붿꽌�뱶
+//	RadMaskImg1筌롫뗄苑뚳옙諭�
 	public static void RadMaskImg1() {
-//	- 留덉뒪�겕 踰쀬� 鍮④컙 留덉뒪�겕異쒕젰 
+//	- 筌띾뜆�뮞占쎄쾿 甕곗�э옙 �뜮�몿而� 筌띾뜆�뮞占쎄쾿�빊�뮆�젾 
 		BaseFunc.count();
 		BaseFunc.margin20();
 		System.out.println("             _____________");
 		System.out.println("            /             \\");
-		System.out.println("           /    �겦---�겦              \\");
-		System.out.println("          /   /	        \\   \\");
+		System.out.println("           /    ^-----^    \\");
+		System.out.println("          /   /         \\   \\");
 		System.out.println("         /   /           \\   \\");
-		System.out.println("         |   | (�뿈)   (�뿈) |   |");
+		System.out.println("         |   | (●)   (●) |   |");
 		System.out.println("         |   (           )   |");
 		System.out.println("         |   |'---------'|   |");
-		System.out.println("         \\    \\ 竊�_�뼚�뼚_/  /    |");
+		System.out.println("         \\    \\ \\_■■_/  /    |");
 		System.out.println("         |     \\       /     |");
 		System.out.println("         |      |     |      |");
 		System.out.println("         |      |     |      |");
 		BaseFunc.margin10();
 	}
 	
-//	RadMaskImg2硫붿꽌�뱶
+//	RadMaskImg2筌롫뗄苑뚳옙諭�
 	public static void RadMaskImg2() {
-//	- 鍮④컙 留덉뒪�겕異쒕젰		
+//	- �뜮�몿而� 筌띾뜆�뮞占쎄쾿�빊�뮆�젾		
 		BaseFunc.count();
 		BaseFunc.margin20();
 		System.out.println("             _____________");
 		System.out.println("            /             \\");
-		System.out.println("           /    �겦---�겦              \\");
+		System.out.println("           /    ^-----^    \\");
 		System.out.println("          /   /	        \\   \\");
 		System.out.println("         /   /           \\   \\");
 		System.out.println("         |   | (●)   (●) |   |");
@@ -41,9 +41,9 @@ public class ImgClass{
 		BaseFunc.margin10();
 	}
 	
-//	RadMaskImg3硫붿꽌�뱶
+//	RadMaskImg3筌롫뗄苑뚳옙諭�
 	public static void RadMaskImg3() {
-//	- 留덉뒪�겕 �띁�떎 踰쀫뒗 鍮④컙 留덉뒪�겕 異쒕젰	
+//	- 筌띾뜆�뮞占쎄쾿 占쎈쓠占쎈뼄 甕곗�ル뮉 �뜮�몿而� 筌띾뜆�뮞占쎄쾿 �빊�뮆�젾	
 		BaseFunc.count();
 		BaseFunc.margin20();
 		RadMaskImg2();
