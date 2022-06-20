@@ -88,12 +88,13 @@ public class LeftEndingClass {
 		BaseFunc.count();
 		BaseFunc.count();
 		BaseFunc.countStr("");
-		BaseFunc.countCh2("▷  뭐라고 대답해야 하지..? ");
-		////////////////////////////////딜레이
-		BaseFunc.count();
-		BaseFunc.count();
-		BaseFunc.countStr("");
+		
 		while(true) {
+			BaseFunc.countCh2("▷  뭐라고 대답해야 하지..? ");
+			////////////////////////////////딜레이
+			BaseFunc.count();
+			BaseFunc.count();
+			BaseFunc.countStr("");
 			System.out.println("          ▶ 네                               ▶ 아뇨");
 			PrintMes.printChoose();
 			dab = scStr.nextLine();
@@ -119,7 +120,7 @@ public class LeftEndingClass {
 				BaseFunc.count();
 				BaseFunc.count();
 				BaseFunc.countStr("");
-				BaseFunc.countStr("빨간 마스크 : ");
+				BaseFunc.countStrNoLn("빨간 마스크 : ");
 				BaseFunc.countCh2("너도.. 예뻐지는거야...");
 				////////////////////////////////딜레이
 				BaseFunc.count();
@@ -128,10 +129,10 @@ public class LeftEndingClass {
 				BaseFunc.margin5();
 				BaseFunc.countCh2("\"투두둑....\"");
 				BaseFunc.margin5();
-				GameOverClass.gameOverIn();
 			//	break;
 			}else if(dab.contentEquals("아뇨")) {
-				BaseFunc.countCh2("빨간 마스크 : 그래?...");
+				BaseFunc.countStrNoLn("빨간 마스크 : ");
+				BaseFunc.countCh2("그래?...");
 				////////////////////////////////딜레이
 				BaseFunc.count();
 				BaseFunc.count();
@@ -153,12 +154,12 @@ public class LeftEndingClass {
 				BaseFunc.countStr("");
 				BaseFunc.countCh2("빨간 마스크 : 이제 너보단 낫지?...");
 				BaseFunc.margin5();
-				GameOverClass.gameOverIn();
 			//	break;
 			}else {
 				BaseFunc.countCh2("다시 입력하세요");
 				continue;
 			}
+			BaseFunc.endingCredit();
 		}
 	}
 	
@@ -167,6 +168,7 @@ public class LeftEndingClass {
 		BaseFunc.countStr("(세탁소로 무작정 뛰기 시작하였다.)");
 		BaseFunc.countCh2("\"나... 예... 쁘... 냐...고....!\"");
 		////////////////////////////////딜레이
+		//tjs주야 wkwk우리wkwkgg
 		BaseFunc.count();
 		BaseFunc.count();
 		BaseFunc.countStr("");
@@ -243,7 +245,7 @@ public class LeftEndingClass {
 		BaseFunc.countCh2("그래서 나는 그날 일을 그 누구에게도 말하지 않았다."); 
 		BaseFunc.countCh2("이런 터무니 없는 일은 그 누구도 믿지 않을 거기에...");
 		BaseFunc.countCh2("나 또한 그런 터무니 없는 이야기를 믿지않는 어른이 되었다.");
-		GameEndClass.gameEndIn();
+		BaseFunc.endingCredit();
 	}
 	public static void policeMethod(){
 		//선주
@@ -373,6 +375,6 @@ public class LeftEndingClass {
 		BaseFunc.count();
 		BaseFunc.margin20();
 		////////////////////////////////딜레이
-		GameEndClass.gameEndIn();
+		BaseFunc.endingCredit();
 	}
 }

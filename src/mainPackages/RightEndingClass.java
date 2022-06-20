@@ -85,7 +85,7 @@ public class RightEndingClass {
 		BaseFunc.count();
 		BaseFunc.countCh2("나 또한 그런 터무니 없는 이야기를 믿지않는 어른이 되었다.");
 		BaseFunc.margin10();
-		GameEndClass.gameEndIn();
+		BaseFunc.endingCredit();
 	}
 //				The End
 //				당신의 용기에 박수를… 살려는 드릴게(허무 엔딩) (￣∇￣ﾉﾉ"
@@ -147,7 +147,7 @@ public class RightEndingClass {
 			BaseFunc.count();
 			BaseFunc.countCh2("나 또한 그런 터무니 없는 이야기를 믿지않는 어른이 되었다.");
 			BaseFunc.margin10();
-			GameEndClass.gameEndIn();
+			BaseFunc.endingCredit();
 		}
 		else {
 			++countH;
@@ -258,7 +258,7 @@ public class RightEndingClass {
 		BaseFunc.margin20();
 		BaseFunc.countCh1("▷  (흑..흑..)"); //주인공		
 		BaseFunc.margin20();
-		GameEndClass.gameEndIn();
+		BaseFunc.endingCredit();
 	}
 	
 }

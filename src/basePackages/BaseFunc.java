@@ -28,7 +28,7 @@ public class BaseFunc {
 //	- 마지막 줄 바꿈 없음
 		try {
 			for (int i = 0; i < mes.length(); i++) {
-				TimeUnit.NANOSECONDS.sleep(200000000);
+				TimeUnit.NANOSECONDS.sleep(290000000);
 				System.out.print(mes.charAt(i));
 			}
 		} catch (Exception e) {
@@ -58,7 +58,7 @@ public class BaseFunc {
 //	- 마지막 줄 바꿈 없음
 		try {
 			for (int i = 0; i < mes.length(); i++) {
-				TimeUnit.NANOSECONDS.sleep(2000000000);
+				TimeUnit.NANOSECONDS.sleep(290000000);
 				System.out.print(mes.charAt(i));
 			}
 		} catch (Exception e) {
@@ -154,5 +154,31 @@ public class BaseFunc {
 		for(int i=0; i<=5; i++) {
 			System.out.println();
 		}
+	}
+	public static void endingCredit() {
+		countStr("              제     작     진 ");
+		countStr("       조   예   서      개발 총괄");
+		countStr("                            스토리 제작");
+		countStr("                            패키지 개발");
+		countStr("                            골목길 스토리 개발 ");
+		countStr("                            아파트 4층 스토리 개발");
+		countStr("                            세탁소 스토리 개발");
+		countStr("                 ");
+		countStr("       박   선   주      디자인 총괄");
+		countStr("                            빨간 마스트 얼굴 제작 ");
+		countStr("                            스토리 제작");
+		countStr("                            파출소 스토리 개발");
+		countStr("                            주택(주인공집) 스토리 개발");
+		countStr("                            아이콘 제작(넣을 수 있길..)");
+		countStr("                 ");
+		countStr("       권   하   은      연출 총괄");
+		countStr("                            지도 제작");
+		countStr("                            스토리 제작");
+		countStr("                            교회 스토리 개발");
+		countStr("                            옥상 스토리 개발");
+		countStr("");
+		countStr("       제   작   팀      3! 4! 포마드");
+		countStr("");
+		GameEndClass.gameEndIn();
 	}
 }

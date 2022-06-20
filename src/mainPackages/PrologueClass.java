@@ -87,6 +87,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("뒤를 돌아본다")) {
 			BaseFunc.countStr("");
 			BaseFunc.countCh2("▷ 별거없다.");
@@ -103,6 +107,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("뒤를 돌아본다")) {
 			prologueCatMethod();
 		} else if (!(choose.equals("뒤 돌아보지 않는다"))) {
@@ -119,6 +127,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("가로등을 살펴본다")) {
 			BaseFunc.countCh2("▷ 고양이다. 그냥 가자.");
 		} else if (!(choose.equals("살펴보지 않는다"))) {
@@ -134,6 +146,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("천천히 고개를 돌아본다")) {
 			prologueMaskMethod();
 		}
@@ -155,6 +171,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("빨간마스크 관련 나무위키를 찾아본다")) {
 			prologueReMethod();
 		}
@@ -179,6 +199,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("인사한다")) {
 			BaseFunc.countCh2("(빨간마스크도 인사했다.)");
 			BaseFunc.countStr("");
@@ -224,6 +248,10 @@ public class PrologueClass {
 		PrintMes.printChoose();
 		String choose = "";
 		choose = scStr.nextLine();
+		////////////////////////////////딜레이
+		BaseFunc.count();
+		BaseFunc.count();
+		BaseFunc.countStr("");
 		if (choose.equals("오른쪽")) {
 			RightEndingClass.rightMethod();
 		}

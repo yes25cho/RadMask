@@ -9,6 +9,8 @@ public class MainClass {
 	//	RightEndingClass.rightMethod();
 //		LeftEndingClass.policeMethod();
 //		LeftEndingClass.churchMethod();
+		BaseFunc.endingCredit();
+//		LeftEndingClass.churchMethod();
 		HomeClass.homeIn();
 		
 	}
